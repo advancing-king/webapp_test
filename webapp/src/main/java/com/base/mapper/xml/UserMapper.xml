@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  <!-- namespace对应的Mapper.java所在的包以及类名 形式：xxx.xxx.XxxMapper -->
+  <!-- resultType是返回的类型 -->
+<mapper namespace="com.base.mapper.UserMapper">
+  <select id="selectUserById" resultType="com.base.pojo.User">
+    select * from users where id = #{id}
+  </select>
+</mapper>
